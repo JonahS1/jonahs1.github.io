@@ -77,7 +77,7 @@ main {
 /*When there are auditions coming up, un-comment out the display: none;*/
 #no-auditions {
     /* makes everything in the div disappear */
-    /* display: none; */
+    display: none;
     /* margins for positioning */
     margin-top: 10vh;
     margin-bottom: 10vh;
@@ -87,7 +87,7 @@ main {
 /*When there are auditions coming up, comment out the display: none;*/
 #audition-info {
     /* makes everything in the div disappear */
-    display: none;
+    /* display: none; */
     /* margins for positioning */
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -97,7 +97,7 @@ main {
 /*When there is a show coming up, un-comment out the display: none;*/
 #no-shows {
     /* makes everything in the div disappear */
-    /* display: none; */
+    display: none;
     /* margins for positioning */
     margin-top: 30vh;
     margin-bottom: 30vh;
@@ -107,7 +107,7 @@ main {
 /*When there is a show coming up, comment out the display: none;*/
 #show-info {
     /* makes everything in the div disappear */
-    display: none;
+    /* display: none; */
     /* margins for positioning */
     margin-top: 5vh;
     margin-bottom: 5vh;
