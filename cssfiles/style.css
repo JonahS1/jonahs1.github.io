@@ -1,19 +1,30 @@
+/* modified from https://materializecss.com/footer.html */
 body {
+    /* gives the body a white background */
     background-color: white;
+    /* sets the display to flex for easier centering */
     display: flex;
+    /* sets the minimum height of the website to the height of the window so that the footer stays at the bottom of the page */
     min-height: 100vh;
+    /* makes items go from top to bottom instead of left to right */
     flex-direction: column;
 }
 
+/* Makes all headers and paragraphs with black text unless otherwise specified */
+/* Makes all header and paragraph content centered */
 h1, h2, h3, h4, h5, h6, p {
     color: black;
     align-content: center !important;
 }
 
+/* Centers all content */
 .center {
     align-content: center !important;
 }
 
+/* Creates a 3 column grid to display officer photo/bio cards */
+/* All items and content are centered */
+/* All columns have a width equal to 30% the screen width and a 5% gap on all sides */
 div.officers-grid {
     display: grid;
     grid-template-columns: repeat(3, 30%);
@@ -23,6 +34,9 @@ div.officers-grid {
 
 }
 
+/* Creates a 2 column grid to display officer photo/bio cards */
+/* All items and content are centered */
+/* All columns have a width equal to 30% the screen width and a 5% gap on all sides */
 div.officers-grid-2 {
     display: grid;
     grid-template-columns: repeat(2, 30%);
@@ -32,6 +46,8 @@ div.officers-grid-2 {
 
 }
 
+/* makes elements with the fa, fab, and far classes (which are all icons from Font Awesome) fit with the theme of the website */
+/* modified from https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
 .fa,
 .fab,
 .far {
@@ -44,12 +60,15 @@ div.officers-grid-2 {
     color: lightgrey;
 }
 
+/* makes everything inside flex-container class elements centered both vertically and horizontally */
 .flex-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* from https://materializecss.com/footer.html */
+/* helps make the footer stay at the bottom of the page */
 main {
     flex: 1 0 auto;
 }
@@ -57,7 +76,9 @@ main {
 /*When there are no auditions coming up, comment out the display: none;*/
 /*When there are auditions coming up, un-comment out the display: none;*/
 #no-auditions {
+    /* makes everything in the div disappear */
     display: none;
+    /* margins for positioning */
     margin-top: 30vh;
     margin-bottom: 30vh;
 }
@@ -65,7 +86,9 @@ main {
 /*When there are no auditions coming up, un-comment out the display: none;*/
 /*When there are auditions coming up, comment out the display: none;*/
 #audition-info {
+    /* makes everything in the div disappear */
     /* display: none; */
+    /* margins for positioning */
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
@@ -73,7 +96,9 @@ main {
 /*When there are no shows coming up, comment out the display: none;*/
 /*When there is a show coming up, un-comment out the display: none;*/
 #no-shows {
-    /* display: none; */
+    /* makes everything in the div disappear */
+    display: none;
+    /* margins for positioning */
     margin-top: 30vh;
     margin-bottom: 30vh;
 }
@@ -81,11 +106,15 @@ main {
 /*When there are no shows coming up, un-comment out the display: none;*/
 /*When there is a show coming up, comment out the display: none;*/
 #show-info {
-    display: none;
+    /* makes everything in the div disappear */
+    /* display: none; */
+    /* margins for positioning */
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
 
+/* modified from https://html-online.com/articles/dynamic-scroll-back-top-page-button-javascript/ */
+/* styles the scroll to top button */
 #back2Top {
     width: 40px;
     line-height: 40px;
@@ -110,27 +139,34 @@ main {
     border-top-right-radius: 20%;
 }
 
+/* modified from https://html-online.com/articles/dynamic-scroll-back-top-page-button-javascript/ */
+/* styles the scroll to top butotn when the mouse is hovering over it */
 #back2Top:hover {
     background-color: rgb(255, 193, 193);
     color: rgb(128, 0, 0);
 }
-
+ 
+/* Makes text font Open Sans or the default sans-serif font if not available */
 .open-sans {
-    font-family: "Open Sans", "Materialize", sans-serif !important;
+    font-family: "Open Sans", sans-serif !important;
 }
 
+/* Makes text font Fascinate or the default cursive font if not available */
 .fascinate {
     font-family: 'Fascinate Inline', cursive !important;
 }
 
+/* Increases font to specified weight of 600. Used for styling Open Sans. */
 .bold {
     font-weight: 600 !important;
 }
 
+/* Decreases font to specified weight of 300. Used for styling Open Sans. */
 .light {
     font-weight: 300 !important;
 }
 
+/* Increases font size to 2.92rem. Used to make headers without additional padding of header tag. */
 .big {
     font-size: 2.92rem !important;
 }

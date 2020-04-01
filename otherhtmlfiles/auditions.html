@@ -4,11 +4,11 @@
         <!-- page title -->
         <title>HTHS PAC - Auditions</title>
         <!--Import custom CSS stylesheet-->
-        <link href = "style.css" type = "text/css" rel = "stylesheet">
+        <link href = "../cssfiles/style.css" type = "text/css" rel = "stylesheet">
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--Import materialize.css-->
-        <link type="text/css" rel="stylesheet" href="materialize-v1.0.0\materialize\css\materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="../materialize-v1.0.0/materialize/css/materialize.min.css"  media="screen,projection"/>
         <!--Import social media icons for footer-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--Import FontAwesome Kit for high tech logo icon in footer-->
@@ -25,7 +25,7 @@
                 <!--Name of site, centered with the Fascinate font and dark red text-->
                 <li><h5 class = "center-align fascinate red-text text-darken-4">HTHS PAC</h5></li>
                 <!--Link to home page-->
-                <li><a class="waves-effect open-sans" href="index.html">HOME</a></li>
+                <li><a class="waves-effect open-sans" href="../index.html">HOME</a></li>
                 <!--Link to about page-->
                 <li><a class="waves-effect open-sans" href="about.html">ABOUT</a></li>
                 <!--Link to gallery page-->
@@ -40,31 +40,32 @@
                 <!--Create top navigation banner/bar-->
                 <div class="nav-wrapper red darken-4">
                     <!--Site title-->
-                    <a href="index.html" class="brand-logo center fascinate big">HTHS PAC</a>
+                    <a href="../index.html" class="brand-logo center fascinate big">HTHS PAC</a>
                     <!--Creates menu icon in top left corner, which can be clicked to access the side navigation panel-->
                     <a href="#" data-target="slide-out" class = "sidenav-trigger show-on-large"><i class = "material-icons">dehaze</i></a>
                 </div>
             </nav>
         </header>
         <main>
+            <!--Creates audition page image with parallax scrolling-->
             <div class="parallax-container">
-                <div class="parallax"><img src="images/auditions.png"></div>
+                <div class="parallax"><img src="../images/auditions.png"></div>
             </div>
             <!-- container to make content not go all the way to the edge of the window -->
             <div class = "container">
                 <p class = "fascinate red-text text-darken-4 center-align big">Auditions</p>
                 <!-- div with id "no-auditions" for the purpose of easily toggling between upcoming auditions and no upcoming auditions (more info in style.css), this one shows a message saying there are no upcoming auditions -->
                 <div id="no-auditions">
-                    <h4 class = "open-sans">Sorry, <strong>there are no auditions at this time.</strong> Please check again later, or sign up for our <a href="index.html#mailing-list">mailing list</a> if you want to be updated as soon as we post new audition information!</h4>
+                    <h4 class = "open-sans">Sorry, <strong>there are no auditions at this time.</strong> Please check again later, or sign up for our <i><a href="../index.html#mailing-list" target="_blank" class="red-text text-darken-4">mailing list</a></i> if you want to be updated as soon as we post new audition information!</h4>
                 </div>
                 <!-- div with id "audition-info" for the purpose of easily toggling between upcoming auditions and no upcoming auditions (more info in style.css), this one shows page info about the upcoming auditions -->                
                 <div id="audition-info">
-                    <img src="images/fflogo.jpg" width=100%>
+                    <img src="../images/fflogo.jpg" width=100%>
                     <h3 class = "fascinate center-align red-text text-darken-4"><strong>Freaky Friday</strong></h3>
                     <h5 class = "open-sans">Auditions will be held on <strong>Wednesday 12/18</strong> and <strong>Thursday 12/19</strong> after school in <strong>Room 110</strong>. <!-- link to audition signup spreadsheet --><i><a href="https://docs.google.com/spreadsheets/d/13yWAlRNSZux7i0SaF5tcPHMBb62CmwweQ9xWEJqPL0U" target="_blank" class = "red-text text-darken-4"><b>Click here</b></a></i> to sign up! Make sure you <strong>INCLUDE LINKS</strong> for your karaoke audition tracks. If applicable, please also specify when you want us to start/stop your track in the notes section.</h5>
                     <h5>If you <strong>absolutely cannot make it</strong> to an after school audition, we will be holding a limited number of auditions during lunch on <strong>Wednesday 12/18</strong>. <i>If you are able to make it to the after school ones, please sign up for those,</i> even if you have to leave early. Just let us know the day of if this is the case so that we can get you in earlier.</h5>
                     <!-- link to audition info packet -->
-                    <h5><i><a href="pdfs/Freaky Friday Info Packet.pdf" target="_blank" class = "red-text text-darken-4"><strong>Click here</strong></a></i> for more information about the show, character descriptions, tips for auditioning, and other ways to help out with the production!</h5>
+                    <h5><i><a href="../pdfs/Freaky Friday Info Packet.pdf" target="_blank" class = "red-text text-darken-4"><strong>Click here</strong></a></i> for more information about the show, character descriptions, tips for auditioning, and other ways to help out with the production!</h5>
                     <br>
                     <h5><strong>Thanks for your interest in PAC! Hope to see you at auditions... break a leg! :)</strong></h5>
                 </div>
@@ -73,7 +74,7 @@
         <!-- import jQuery -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <!-- import Materialize -->
-        <script src = "materialize-v1.0.0\materialize\js\materialize.min.js"></script>
+        <script src = "../materialize-v1.0.0/materialize/js/materialize.min.js"></script>
         <script>
             $(document).ready(function(){
                 /*Initialize collapsible side navigation panel*/
@@ -109,7 +110,7 @@
             <!-- creates hths website icon in footer -->
             <a href="https://www.hths.mcvsd.org" target="_blank" class="fab fa-react"></a>
             <!-- creates email icon in footer -->
-            <a href="pdfs/PAC Officer Emails.pdf" target="_blank" class="far fa-envelope"></a>
+            <a href="../pdfs/PAC Officer Emails.pdf" target="_blank" class="far fa-envelope"></a>
             <!-- creates scroll to top button, code from https://html-online.com/articles/dynamic-scroll-back-top-page-button-javascript/ -->
             <a id="back2Top" title="Back to top" href="#">&#10148;</a>
         </footer>

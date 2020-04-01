@@ -2,13 +2,13 @@
 <html>
     <head>
         <!-- page title -->
-        <title>HTHS PAC - Gallery</title>
+        <title>HTHS PAC - Upcoming Shows</title>
         <!--Import custom CSS stylesheet-->
-        <link href = "style.css" type = "text/css" rel = "stylesheet">
+        <link href = "../cssfiles/style.css" type = "text/css" rel = "stylesheet">
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--Import materialize.css-->
-        <link type="text/css" rel="stylesheet" href="materialize-v1.0.0\materialize\css\materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="../materialize-v1.0.0/materialize/css/materialize.min.css"  media="screen,projection"/>
         <!--Import social media icons for footer-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--Import FontAwesome Kit for high tech logo icon in footer-->
@@ -25,14 +25,14 @@
                 <!--Name of site, centered with the Fascinate font and dark red text-->
                 <li><h5 class = "center-align fascinate red-text text-darken-4">HTHS PAC</h5></li>
                 <!--Link to home page-->
-                <li><a class="waves-effect open-sans" href="index.html">HOME</a></li>
+                <li><a class="waves-effect open-sans" href="../index.html">HOME</a></li>
                 <!--Link to about page-->
                 <li><a class="waves-effect open-sans" href="about.html">ABOUT</a></li>
                 <!--Link to gallery page-->
-                <!--Since this is the gallery page, the "active" class is used, making the link appear to already be clicked-->
-                <li class="active"><a class="waves-effect open-sans" href="#!">GALLERY</a></li>
+                <li><a class="waves-effect open-sans" href="gallery.html">GALLERY</a></li>
                 <!--Link to upcoming shows page-->
-                <li><a class="waves-effect open-sans" href="upcoming-shows.html">UPCOMING SHOWS</a></li>
+                <!--Since this is the upcoming shows page, the "active" class is used, making the link appear to already be clicked-->
+                <li class="active"><a class="waves-effect open-sans" href="#!">UPCOMING SHOWS</a></li>
                 <!--Link to auditions page-->
                 <li><a class="waves-effect open-sans" href="auditions.html">AUDITIONS</a></li>
             </ul>
@@ -40,63 +40,39 @@
                 <!--Create top navigation banner/bar-->
                 <div class="nav-wrapper red darken-4">
                     <!--Site title-->
-                    <a href="index.html" class="brand-logo center fascinate big">HTHS PAC</a>
+                    <a href="../index.html" class="brand-logo center fascinate big">HTHS PAC</a>
                     <!--Creates menu icon in top left corner, which can be clicked to access the side navigation panel-->
                     <a href="#" data-target="slide-out" class = "sidenav-trigger show-on-large"><i class = "material-icons">dehaze</i></a>
                 </div>
             </nav>
         </header>
         <main>
+            <!--Creates audition page image with parallax scrolling-->
             <div class="parallax-container">
-                <div class="parallax"><img src="images/gallery.png"></div>
+                <div class="parallax"><img src="../images/upcoming.jpg"></div>
             </div>
-            <!-- container to make content not go all the way to the edge of the window -->
-            <div class="container">
-                <p class = "fascinate red-text text-darken-4 center-align big">Gallery</p>
-            </div>
-            <div class="parallax-container">
-                <div class="parallax"><img src="images/mcm1940.png"></div>
-            </div>
-            <!-- container to make content not go all the way to the edge of the window -->
-            <div class = "container">
-                <h4 class = "fascinate red-text text-darken-4 center-align">The Musical Comedy Murders of 1940</h4>
-                <h5 class = "open-sans center-align">Fall 2019</h5>
-                <iframe src="https://drive.google.com/embeddedfolderview?id=1J5ne6oSQf2zAAA-KcGm54GgZqio0MEyc#grid" style="width:100%; height:600px; border:0;"></iframe>
-            </div>
-            <div class="parallax-container">
-                <div class="parallax"><img src="images/bee.jpg"></div>
-            </div>
-            <!-- container to make content not go all the way to the edge of the window -->
-            <div class = "container">
-                <h4 class = "fascinate red-text text-darken-4 center-align">The 25th Annual Putnam County Spelling Bee</h4>
-                <h5 class = "open-sans center-align">Spring 2019</h5>
-                <iframe src="https://drive.google.com/embeddedfolderview?id=10jrg3lNIdvVLcb5k4JrEzHD5NjyOZb7U#grid" style="width:100%; height:600px; border:0;"></iframe>
-            </div>
-            <div class="parallax-container">
-                <div class="parallax"><img src="images/little.jpg"></div>
-            </div>
-            <!-- container to make content not go all the way to the edge of the window -->
-            <div class = "container">    
-                <h4 class = "fascinate red-text text-darken-4 center-align">Little Shop of Horrors</h4>
-                <h5 class = "open-sans center-align">Spring 2018</h5>
-                <iframe src="https://drive.google.com/embeddedfolderview?id=1ilqXZtphqNIkWjJz1klG112OHhXV9upK#grid" style="width:100%; height:600px; border:0;"></iframe>
-            </div>
-            <div class="parallax-container">
-                <div class="parallax"><img src="images/pippin1.png"></div>
-            </div>
-            <!-- container to make content not go all the way to the edge of the window -->
-            <div class = "container">    
-                <h4 class = "fascinate red-text text-darken-4 center-align">Pippin</h4>
-                <h5 class = "open-sans center-align">Spring 2017</h5>
-                <iframe src="https://drive.google.com/embeddedfolderview?id=0B3SwuikIXewIcU9kWjVsSXliRFU#grid" style="width:100%; height:600px; border:0;"></iframe>
+            <!-- container to center content and make it not go all the way to the edge of the window -->
+            <div class="container center">
+                <!-- div with id "show-info" for the purpose of easily toggling between an upcoming show and no upcoming shows (more info in style.css), this one shows page info about the upcoming show -->
+                <div id="show-info">
+                    <h4 class = "open-sans">Come see HTHS PAC's production of...</h4>
+                    <h3 class = "fascinate red-text text-darken-4">Freaky Friday!</h3>
+                    <br>
+                    <img src="../images/ffad.png" class="center" style="width: 50vw;">
+                </div>
+                <!-- div with id "no-shows" for the purpose of easily toggling between an upcoming show and no upcoming shows (more info in style.css), this one shows a message to show if there are no upcoming shows-->                
+                <div id="no-shows">
+                    <h3 class = "fascinate red-text text-darken-4">Upcoming Shows</h3>
+                    <h4 class = "open-sans">Sorry, <strong>there are no upcoming shows at this time.</strong> Please check again later, or sign up for our <i><a href="../index.html#mailing-list" target="_blank" class="red-text text-darken-4">mailing list</a></i> if you want to be updated as soon as we post new show information!</h4>
+                </div>
             </div>
         </main>
         <!-- import jQuery -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <!-- import Materialize -->
-        <script src = "materialize-v1.0.0\materialize\js\materialize.min.js"></script>
+        <script src = "../materialize-v1.0.0/materialize/js/materialize.min.js"></script>
         <script>
-            $(document).ready(function() {
+            $(document).ready(function(){
                 /*Initialize collapsible side navigation panel*/
                 $('.sidenav').sidenav();
                 /*Initialize parallax scrolling elements*/
@@ -130,7 +106,7 @@
             <!-- creates hths website icon in footer -->
             <a href="https://www.hths.mcvsd.org" target="_blank" class="fab fa-react"></a>
             <!-- creates email icon in footer -->
-            <a href="pdfs/PAC Officer Emails.pdf" target="_blank" class="far fa-envelope"></a>
+            <a href="../pdfs/PAC Officer Emails.pdf" target="_blank" class="far fa-envelope"></a>
             <!-- creates scroll to top button, code from https://html-online.com/articles/dynamic-scroll-back-top-page-button-javascript/ -->
             <a id="back2Top" title="Back to top" href="#">&#10148;</a>
         </footer>

@@ -4,11 +4,11 @@
         <!-- page title -->
         <title>HTHS PAC - About Us</title>
         <!--Import custom CSS stylesheet-->
-        <link type = "text/css" rel = "stylesheet" href = "style.css">
+        <link type = "text/css" rel = "stylesheet" href = "../cssfiles/style.css">
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--Import materialize.css-->
-        <link type="text/css" rel="stylesheet" href="materialize-v1.0.0\materialize\css\materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="../materialize-v1.0.0/materialize/css/materialize.min.css"  media="screen,projection"/>
         <!--Import social media icons for footer-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--Import FontAwesome Kit for high tech logo icon in footer-->
@@ -25,7 +25,7 @@
                 <!--Name of site, centered with the Fascinate font and dark red text-->
                 <li><h4 class = "center-align fascinate red-text text-darken-4">HTHS PAC</h4></li>
                 <!--Link to home page-->
-                <li><a class="waves-effect open-sans" href="index.html">HOME</a></li>
+                <li><a class="waves-effect open-sans" href="../index.html">HOME</a></li>
                 <!--Link to about page-->
                 <!--Since this is the about page, the "active" class is used, making the link appear to already be clicked-->
                 <li class = "active"><a class="waves-effect open-sans" href="#!">ABOUT</a></li>
@@ -40,7 +40,7 @@
                 <!--Create top navigation banner/bar-->
                 <div class="nav-wrapper red darken-4">
                     <!--Site title-->
-                    <a href="index.html" class="brand-logo center fascinate big">HTHS PAC</a>
+                    <a href="../index.html" class="brand-logo center fascinate big">HTHS PAC</a>
                     <!--Creates menu icon in top left corner, which can be clicked to access the side navigation panel-->
                     <a href="#" data-target="slide-out" class = "sidenav-trigger show-on-large"><i class = "material-icons">dehaze</i></a>
                 </div>
@@ -51,7 +51,7 @@
             <div id = "content">
                 <!--Create about image with parallax scrolling-->
                 <div class="parallax-container">
-                    <div class="parallax"><img src="images/about.png"></div>
+                    <div class="parallax"><img src="../images/about.png"></div>
                 </div>
                 <!-- container to make content not go all the way to the edge of the window -->
                 <div class="container">
@@ -105,7 +105,7 @@
                 </div>
                 <!--Create second about image with parallax scrolling-->
                 <div class="parallax-container">
-                    <div class="parallax"><img src="images/about2.png"></div>
+                    <div class="parallax"><img src="../images/about2.png"></div>
                 </div>
                 <!-- container to make content not go all the way to the edge of the window -->
                 <div class = "container">
@@ -117,7 +117,7 @@
                         <div class="card" id = "advisor">
                             <!--Photo of the club advisor-->
                             <div class="card-image">
-                                <img class="activator" src = "images\brown.jpg">
+                                <img class="activator" src = "../images/brown.jpg">
                             </div>
                             <!--This is what will show on the card before the user clicks on it-->
                             <div class="card-content">
@@ -138,7 +138,7 @@
                         <div class="card" id = "producer">
                             <!--Photo of the producer-->
                             <div class="card-image">
-                                <img class="activator" src = "images\liu.jpg">
+                                <img class="activator" src = "../images/liu.jpg">
                             </div>
                             <!--This is what will show on the card before the user clicks on it-->
                             <div class="card-content">
@@ -159,7 +159,7 @@
                         <div class="card" id = "asst-producer">
                             <!--Photo of the assistant producer-->
                             <div class="card-image">
-                                <img class="activator" src = "images\radu.jpg">
+                                <img class="activator" src = "../images/radu.jpg">
                             </div>
                             <!--This is what will show on the card before the user clicks on it-->
                             <div class="card-content">
@@ -183,45 +183,63 @@
                         <div class="card" id = "fall-director">
                             <!--Photo of the fall play director-->
                             <div class="card-image">
-                                <img class="activator" src = "images\lind.jpg">
+                                <img class="activator" src = "../images/lind.jpg">
                             </div>
+                            <!--This is what will show on the card before the user clicks on it-->
                             <div class="card-content">
+                                <!--Advisor/officer name and an expand icon indicating the user can click for more info-->
                                 <span class="card-title activator red-text text-darken-4 open-sans">Taylor Lind<i class="material-icons right">keyboard_arrow_up</i></span>
+                                <!--Advisor/officer position-->
                                 <p class = "open-sans light">Fall Play & Improv Division Director</p>
                             </div>
+                            <!--This is what will show on the card after the user clicks on it-->
                             <div class="card-reveal">
+                                <!--Advisor/officer name and a hide icon indicating the user can click to hide the extra info-->
                                 <span class="card-title red-text text-darken-4 open-sans">Taylor Lind<i class="material-icons right">keyboard_arrow_down</i></span>
-                                <p class = "open-sans light">Here is some more information about this product that is only revealed once clicked on.</p>
+                                <!--More information about the officer/advisor-->
+                                <p class = "open-sans light">Taylor Lind is the fall play director. She has been part of many PAC shows, acting and singing in <strong><i>Freaky Friday</i></strong> as Ellie and <strong><i>Spelling Bee</i></strong> as Olive's mom, among others. Affectionately dubbed "PAC Mom" by others, she also founded and leads the improv division and plays the guitar.</p>
                             </div>
                         </div>
                         <!--Card for the spring musical director-->
                         <div class="card" id = "spring-director">
                             <!--Photo of the spring musical director-->
                             <div class="card-image">
-                                <img class="activator" src = "images\ladolcetta.jpg">
+                                <img class="activator" src = "../images/ladolcetta.jpg">
                             </div>
+                            <!--This is what will show on the card before the user clicks on it-->
                             <div class="card-content">
+                                <!--Advisor/officer name and an expand icon indicating the user can click for more info-->
                                 <span class="card-title activator red-text text-darken-4 open-sans">Mia Ladolcetta<i class="material-icons right">keyboard_arrow_up</i></span>
+                                <!--Advisor/officer position-->
                                 <p class = "open-sans light">Spring Musical Director</p>
                             </div>
+                            <!--This is what will show on the card after the user clicks on it-->
                             <div class="card-reveal">
+                                <!--Advisor/officer name and a hide icon indicating the user can click to hide the extra info-->
                                 <span class="card-title red-text text-darken-4 open-sans">Mia Ladolcetta<i class="material-icons right">keyboard_arrow_down</i></span>
-                                <p class = "open-sans light">Here is some more information about this product that is only revealed once clicked on.</p>
+                                <!--More information about the officer/advisor-->
+                                <p class = "open-sans light">Mia Ladolcetta is the spring musical director. Not only has she performed onstage for many PAC shows, but she also has played the drums in both of PAC's bands, assistant directed two productions, built props for stage crew, picked out costumes for shows, and did makeup for various actors. How does she have time for all of this? We honestly don't know.</p>
                             </div>
                         </div>
                         <!--Card for the stage crew director-->
                         <div class="card" id = "stage-director">
                             <!--Photo of the stage crew director-->
                             <div class="card-image">
-                                <img class="activator" src = "images\monroe.jpg">
+                                <img class="activator" src = "../images/monroe.jpg">
                             </div>
+                            <!--This is what will show on the card before the user clicks on it-->
                             <div class="card-content ">
+                                <!--Advisor/officer name and an expand icon indicating the user can click for more info-->
                                 <span class="card-title activator red-text text-darken-4 open-sans">Kate Monroe<i class="material-icons right">keyboard_arrow_up</i></span>
+                                <!--Advisor/officer position-->
                                 <p class = "open-sans">Stage Crew Director</p>
                             </div>
+                            <!--This is what will show on the card after the user clicks on it-->
                             <div class="card-reveal">
+                                <!--Advisor/officer name and a hide icon indicating the user can click to hide the extra info-->
                                 <span class="card-title red-text text-darken-4 open-sans">Kate Monroe<i class="material-icons right">keyboard_arrow_down</i></span>
-                                <p class = "open-sans light">Here is some more information about this product that is only revealed once clicked on.</p>
+                                <!--More information about the officer/advisor-->
+                                <p class = "open-sans light">Kate Monroe is the stage crew director of PAC. She loves to dream big, designing multi-scene rotating pillars and secret doors in bookcases for two of PAC's most recent shows. When not working behind the curtain, Kate enjoys playing the saxophone and the guitar.</p>
                             </div>
                         </div>
                     </div>
@@ -231,45 +249,63 @@
                         <div class="card" id = "tech-director">
                             <!--Photo of the tech crew director-->
                             <div class="card-image">
-                                <img class="activator" src = "images\teitelbaum.jpg">
+                                <img class="activator" src = "../images/teitelbaum.jpg">
                             </div>
+                            <!--This is what will show on the card before the user clicks on it-->
                             <div class="card-content">
+                                <!--Advisor/officer name and an expand icon indicating the user can click for more info-->
                                 <span class="card-title activator red-text text-darken-4 open-sans">Marissa Teitelbaum<i class="material-icons right">keyboard_arrow_up</i></span>
+                                <!--Advisor/officer position-->
                                 <p class = "open-sans light">Tech Crew Director</p>
                             </div>
+                            <!--This is what will show on the card after the user clicks on it-->
                             <div class="card-reveal">
+                                <!--Advisor/officer name and a hide icon indicating the user can click to hide the extra info-->
                                 <span class="card-title activator red-text text-darken-4 open-sans">Marissa Teitelbaum<i class="material-icons right">keyboard_arrow_down</i></span>
-                                <p class = "open-sans light">Here is some more information about this product that is only revealed once clicked on.</p>
+                                <!--More information about the officer/advisor-->
+                                <p class = "open-sans light">Marissa Teitelbaum is the tech crew director. A self-proclaimed button-pressing expert, Marissa enjoys experimenting with colored lighting, spots, and sound effects to make each and every PAC show look and sound amazing.</p>
                             </div>
                         </div>
                         <!--Card for the jazz band director-->
                         <div class="card" id = "jazz-director">
                             <!--Photo of the jazz band director-->
                             <div class="card-image">
-                                <img class="activator" src = "images\sabuwala.jpg">
+                                <img class="activator" src = "../images/sabuwala.jpg">
                             </div>
+                            <!--This is what will show on the card before the user clicks on it-->
                             <div class="card-content">
+                                <!--Advisor/officer name and an expand icon indicating the user can click for more info-->
                                 <span class="card-title activator red-text text-darken-4 open-sans">Khushi Sabuwala<i class="material-icons right">keyboard_arrow_up</i></span>
+                                <!--Advisor/officer position-->
                                 <p class = "open-sans light">Jazz Band Director</p>
                             </div>
+                            <!--This is what will show on the card after the user clicks on it-->
                             <div class="card-reveal">
+                                <!--Advisor/officer name and a hide icon indicating the user can click to hide the extra info-->
                                 <span class="card-title red-text text-darken-4 open-sans">Khushi Sabuwala<i class="material-icons right">keyboard_arrow_down</i></span>
-                                <p class = "open-sans light">Here is some more information about this product that is only revealed once clicked on.</p>
+                                <!--More information about the officer/advisor-->
+                                <p class = "open-sans light">Khushi Sabuwala is the jazz band director. She likes bringing different songs to the band's repertoire, with styles ranging from jazz to funk to pop. When not directing or reminding the band to practice at home, she can be found in the band playing the trumpet.</p>
                             </div>         
                         </div>
                         <!--Card for the pit band director-->
                         <div class="card" id = "pit-director">
                             <!--Photo of the pit band director-->
                             <div class="card-image">
-                                <img class="activator" src = "images\chan.jpg">
+                                <img class="activator" src = "../images/chan.jpg">
                             </div>
+                            <!--This is what will show on the card before the user clicks on it-->
                             <div class="card-content">
+                                <!--Advisor/officer name and an expand icon indicating the user can click for more info-->
                                 <span class="card-title activator red-text text-darken-4 open-sans">Thomas Chan<i class="material-icons right">keyboard_arrow_up</i></span>
+                                <!--Advisor/officer position-->
                                 <p class = "open-sans">Pit Director</p>
                             </div>
+                            <!--This is what will show on the card after the user clicks on it-->
                             <div class="card-reveal">
+                                <!--Advisor/officer name and a hide icon indicating the user can click to hide the extra info-->
                                 <span class="card-title red-text text-darken-4 open-sans">Thomas Chan<i class="material-icons right">keyboard_arrow_down</i></span>
-                                <p class = "open-sans light">Here is some more information about this product that is only revealed once clicked on.</p>
+                                <!--More information about the officer/advisor-->
+                                <p class = "open-sans light">Thomas Chan is the pit band director. He has also played the trumpet, guitar, piano, and sang in various musical groups in the past. He is also very photogenic... we had a hard time picking which photo to use for his card, but just look at that pose!</p>
                             </div>
                         </div>
                     </div>
@@ -279,45 +315,63 @@
                         <div class="card" id = "costume-director">
                             <!--Photo of the costume and makeup director-->
                             <div class="card-image">
-                                <img class="activator" src = "images\lascano.jpg">
+                                <img class="activator" src = "../images/lascano.jpg">
                             </div>
+                            <!--This is what will show on the card before the user clicks on it-->
                             <div class="card-content">
+                                <!--Advisor/officer name and an expand icon indicating the user can click for more info-->
                                 <span class="card-title activator red-text text-darken-4 open-sans">Gemma Lascano<i class="material-icons right">keyboard_arrow_up</i></span>
+                                <!--Advisor/officer position-->
                                 <p class = "open-sans light">Costume & Makeup Director</p>
                             </div>
+                            <!--This is what will show on the card after the user clicks on it-->
                             <div class="card-reveal">
+                                <!--Advisor/officer name and a hide icon indicating the user can click to hide the extra info-->
                                 <span class="card-title red-text text-darken-4 open-sans">Gemma Lascano<i class="material-icons right">keyboard_arrow_down</i></span>
-                                <p class = "open-sans light">Here is some more information about this product that is only revealed once clicked on.</p>
+                                <!--More information about the officer/advisor-->
+                                <p class = "open-sans light">Gemma Lascano is the costuming and makeup director. She makes sure that no PAC member commits any fashion atrocities (trust me, it's almost happened before...). When not creating stylish looks for the cast, she loves creating her own fashion designs and unique clothing items.</p>
                             </div>
                         </div>
                         <!--Card for the choral director-->
                         <div class="card" id = "choral-director">
                             <!--Photo of the choral director-->
                             <div class="card-image">
-                                <img class="activator" src = "images\tripathi.jpg">
+                                <img class="activator" src = "../images/tripathi.jpg">
                             </div>
+                            <!--This is what will show on the card before the user clicks on it-->
                             <div class="card-content">
+                                <!--Advisor/officer name and an expand icon indicating the user can click for more info-->
                                 <span class="card-title activator red-text text-darken-4 open-sans">Nina Tripathi<i class="material-icons right">keyboard_arrow_up</i></span>
+                                <!--Advisor/officer position-->
                                 <p class = "open-sans light">Choral Director</p>
                             </div>
+                            <!--This is what will show on the card after the user clicks on it-->
                             <div class="card-reveal">
+                                <!--Advisor/officer name and a hide icon indicating the user can click to hide the extra info-->
                                 <span class="card-title red-text text-darken-4 open-sans">Nina Tripathi<i class="material-icons right">keyboard_arrow_down</i></span>
-                                <p class = "open-sans light">Here is some more information about this product that is only revealed once clicked on.</p>
+                                <!--More information about the officer/advisor-->
+                                <p class = "open-sans light">Nina Tripathi is the choral director for the spring musical. She loves to sing, whether it's in a choir outside of school or onstage with PAC. She has also acted in many PAC fall dramas. She enjoys helping her fellow actors nail their solos and finds ensemble harmonies extremely satisfying. Then again, who doesn't?</p>
                             </div>
                         </div>
                         <!--Card for the choreography director-->
                         <div class="card" id = "choreo-director">
                             <!--Photo of the choreography director-->
                             <div class="card-image">
-                                <img class="activator" src = "images\lin.jpg">
+                                <img class="activator" src = "../images/lin.jpg">
                             </div>
+                            <!--This is what will show on the card before the user clicks on it-->
                             <div class="card-content">
+                                <!--Advisor/officer name and an expand icon indicating the user can click for more info-->
                                 <span class="card-title activator red-text text-darken-4 open-sans">Sophia Lin<i class="material-icons right">keyboard_arrow_up</i></span>
+                                <!--Advisor/officer position-->
                                 <p class = "open-sans light">Choreography Director</p>                           
                             </div>
+                            <!--This is what will show on the card after the user clicks on it-->
                             <div class="card-reveal">
+                                <!--Advisor/officer name and a hide icon indicating the user can click to hide the extra info-->
                                 <span class="card-title red-text text-darken-4 open-sans">Sophia Lin<i class="material-icons right">keyboard_arrow_down</i></span>
-                                <p class = "open-sans light">Here is some more information about this product that is only revealed once clicked on.</p>
+                                <!--More information about the officer/advisor-->
+                                <p class = "open-sans light">Sophia Lin is the choreography director. An officer of the HTHS Dance Club, she loves to dance and create unique, fun routines, ranging in styles from hip-hop to jazz to contemporary. She also enjoys singing in choirs and PAC productions.</p>
                             </div>
                         </div>
                     </div>
@@ -327,45 +381,63 @@
                         <div class="card" id = "asst-director-1">
                             <!--Photo of assistant director-->
                             <div class="card-image">
-                                <img class="activator" src = "images\bigley.jpg">
+                                <img class="activator" src = "../images/bigley.jpg">
                             </div>
+                            <!--This is what will show on the card before the user clicks on it-->
                             <div class="card-content">
+                                <!--Advisor/officer name and an expand icon indicating the user can click for more info-->
                                 <span class="card-title activator red-text open-sans text-darken-4">Alex Bigley<i class="material-icons right">keyboard_arrow_up</i></span>
+                                <!--Advisor/officer position-->
                                 <p class = "open-sans light">Assistant Director</p>
                             </div>
+                            <!--This is what will show on the card after the user clicks on it-->
                             <div class="card-reveal">
+                                <!--Advisor/officer name and a hide icon indicating the user can click to hide the extra info-->
                                 <span class="card-title red-text text-darken-4 open-sans">Alex Bigley<i class="material-icons right">keyboard_arrow_down</i></span>
-                                <p class = "open-sans light">Here is some more information about this product that is only revealed once clicked on.</p>
+                                <!--More information about the officer/advisor-->
+                                <p class = "open-sans light">Alex Bigley is an assitant director of PAC. He loves to perform, whether it's singing as Officer Kowalski in <strong><i>Freaky Friday</i></strong>, acting as a guard in <strong><i>Museum</i></strong>, or participating in improv meetings. He enjoys bringing a sense of fun to every role he plays.</p>
                             </div>
                         </div>
                         <!--Card for assistant director-->
                         <div class="card" id = "asst-director-2">
                             <!--Photo of assistant director-->
                             <div class="card-image">
-                                <img class="activator" src = "images\cali.jpg">
+                                <img class="activator" src = "../images/cali.jpg">
                             </div>
+                            <!--This is what will show on the card before the user clicks on it-->
                             <div class="card-content">
+                                <!--Advisor/officer name and an expand icon indicating the user can click for more info-->
                                 <span class="card-title activator red-text text-darken-4 open-sans">Lauren Cali<i class="material-icons right">keyboard_arrow_up</i></span>
+                                <!--Advisor/officer position-->
                                 <p class = "open-sans light">Assistant Director</p>
-                            </div>                          
+                            </div>
+                            <!--This is what will show on the card after the user clicks on it-->                          
                             <div class="card-reveal">
+                                <!--Advisor/officer name and a hide icon indicating the user can click to hide the extra info-->
                                 <span class="card-title red-text text-darken-4 open-sans">Lauren Cali<i class="material-icons right">keyboard_arrow_down</i></span>
-                                <p class = "open-sans light">Here is some more information about this product that is only revealed once clicked on.</p>
+                                <!--More information about the officer/advisor-->
+                                <p class = "open-sans light">Lauren Cali is an assitant director. Making her PAC debut as Marcy in last year's production of <strong><i>Spelling Bee</i></strong> as a junior, she has one piece of advice to anyone interested in PAC: don't wait to join! She is eager to bring the same energy and dedication to the role of Katherine in this year's <strong><i>Freaky Friday</i></strong>.</p>
                             </div>  
                         </div>
                         <!--Card for assistant director-->
                         <div class="card" id = "asst-director-3">
                             <!--Photo of assistant director-->
                             <div class="card-image">
-                                <img class="activator" src = "images\jasser.jpg">
+                                <img class="activator" src = "../images/jasser.jpg">
                             </div>
+                            <!--This is what will show on the card before the user clicks on it-->
                             <div class="card-content">
+                                <!--Advisor/officer name and an expand icon indicating the user can click for more info-->
                                 <span class="card-title activator red-text text-darken-4 open-sans">Aden Jasser<i class="material-icons right">keyboard_arrow_up</i></span>
+                                <!--Advisor/officer position-->
                                 <p class = "open-sans light">Assistant Director</p>
                             </div>
+                            <!--This is what will show on the card after the user clicks on it-->
                             <div class="card-reveal">
+                                <!--Advisor/officer name and a hide icon indicating the user can click to hide the extra info-->
                                 <span class="card-title red-text text-darken-4 open-sans">Aden Jasser<i class="material-icons right">keyboard_arrow_down</i></span>
-                                <p class = "open-sans light">Here is some more information about this product that is only revealed once clicked on.</p>
+                                <!--More information about the officer/advisor-->
+                                <p class = "open-sans light">Aden Jasser is an assistant director. He has been in many PAC productions, his most recent role being Helsa in <strong><i>The Musical Comedy Murders of 1940</i></strong>. Yes, he played a woman... rather, a man pretending to be a woman. Spoiler alert!</p>
                             </div>
                         </div>
                     </div>
@@ -375,30 +447,42 @@
                         <div class="card" id = "asst-director-4">
                             <!--Photo of assistant director-->
                             <div class="card-image">
-                                <img class="activator" src = "images\menon.jpg">
+                                <img class="activator" src = "../images/menon.jpg">
                             </div>
+                            <!--This is what will show on the card before the user clicks on it-->
                             <div class="card-content">
+                                <!--Advisor/officer name and an expand icon indicating the user can click for more info-->
                                 <span class="card-title activator red-text text-darken-4 open-sans">Arjun Menon<i class="material-icons right">keyboard_arrow_up</i></span>
+                                <!--Advisor/officer position-->
                                 <p class = "open-sans light">Assistant Director</p>
                             </div>
+                            <!--This is what will show on the card after the user clicks on it-->
                             <div class="card-reveal">
+                                <!--Advisor/officer name and a hide icon indicating the user can click to hide the extra info-->
                                 <span class="card-title red-text text-darken-4 open-sans">Arjun Menon<i class="material-icons right">keyboard_arrow_down</i></span>
-                                <p class = "open-sans light">Here is some more information about this product that is only revealed once clicked on.</p>
+                                <!--More information about the officer/advisor-->
+                                <p class = "open-sans light">Arjun Menon is an assistant director. He loves the spotlight, whether he's singing, acting, playing the piano, or a combination of all three! He also participates in theater productions outside of PAC and loves bringing his talents to other PAC events. Don't miss him as Adam in <strong><i>Freaky Friday</i></strong>!</p>
                             </div>
                         </div>
                         <!--Card for assistant director-->
                         <div class="card" id = "asst-director-5">
                             <!--Photo of assistant director-->
                             <div class="card-image">
-                                <img class="activator" src = "images\sussman.jpg">
+                                <img class="activator" src = "../images/sussman.jpg">
                             </div>
+                            <!--This is what will show on the card before the user clicks on it-->
                             <div class="card-content">
+                                <!--Advisor/officer name and an expand icon indicating the user can click for more info-->
                                 <span class="card-title activator red-text text-darken-4 open-sans">Jonah Sussman<i class="material-icons right">keyboard_arrow_up</i></span>
+                                <!--Advisor/officer position-->
                                 <p class = "open-sans light">Assistant Director</p>
-                            </div>                    
+                            </div>
+                            <!--This is what will show on the card after the user clicks on it-->                    
                             <div class="card-reveal">
+                                <!--Advisor/officer name and a hide icon indicating the user can click to hide the extra info-->
                                 <span class="card-title red-text text-darken-4 open-sans">Jonah Sussman<i class="material-icons right">keyboard_arrow_down</i></span>
-                                <p class = "open-sans light">Jonah is an assistant director and has been in PAC since his freshman year, performing as Mike Riley in <strong><i>Freaky Friday</i> and Dan in <i>Spelling Bee</i>, among other productions. He has played trumpet in the jazz band and also enjoys playing the French horn and the piano. Did we mention his insane vocal range?</p>
+                                <!--More information about the officer/advisor-->
+                                <p class = "open-sans light">Jonah is an assistant director and has been in PAC since his freshman year, performing as Mike Riley in <strong><i>Freaky Friday</i></strong> and Dan in <strong><i>Spelling Bee</i></strong>, among other productions. He has played trumpet in the jazz band and also enjoys playing the French horn and the piano. Did we mention his insane vocal range?</p>
                             </div>        
                         </div>
                     </div>
@@ -408,7 +492,7 @@
         <!-- import jQuery -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <!-- import Materialize -->
-        <script src = "materialize-v1.0.0\materialize\js\materialize.min.js"></script>
+        <script src = "../materialize-v1.0.0/materialize/js/materialize.min.js"></script>
         <script>
             $(document).ready(function(){
                 /*Initialize collapsible side navigation panel*/
@@ -444,7 +528,7 @@
             <!-- creates hths website icon in footer -->
             <a href="https://www.hths.mcvsd.org" target="_blank" class="fab fa-react"></a>
             <!-- creates email icon in footer -->
-            <a href="pdfs/PAC Officer Emails.pdf" target="_blank" class="far fa-envelope"></a>
+            <a href="../pdfs/PAC Officer Emails.pdf" target="_blank" class="far fa-envelope"></a>
             <!-- creates scroll to top button, code from https://html-online.com/articles/dynamic-scroll-back-top-page-button-javascript/ -->
             <a id="back2Top" title="Back to top" href="#">&#10148;</a>
         </footer>
