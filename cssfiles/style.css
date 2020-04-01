@@ -79,8 +79,8 @@ main {
     /* makes everything in the div disappear */
     display: none;
     /* margins for positioning */
-    margin-top: 30vh;
-    margin-bottom: 30vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 /*When there are no auditions coming up, un-comment out the display: none;*/
