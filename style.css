@@ -73,7 +73,7 @@ main {
 /*When there are no shows coming up, comment out the display: none;*/
 /*When there is a show coming up, un-comment out the display: none;*/
 #no-shows {
-    display: none;
+    /* display: none; */
     margin-top: 30vh;
     margin-bottom: 30vh;
 }
@@ -81,7 +81,7 @@ main {
 /*When there are no shows coming up, un-comment out the display: none;*/
 /*When there is a show coming up, comment out the display: none;*/
 #show-info {
-    /* display: none; */
+    display: none;
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
