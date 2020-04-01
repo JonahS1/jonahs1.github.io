@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Import custom CSS stylesheet-->
+        <link href = "style.css" type = "text/css" rel = "stylesheet">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="materialize-v1.0.0\materialize\css\materialize.min.css"  media="screen,projection"/>
+        <!--Import social media icons for footer-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Import FontAwesome Kit for high tech logo icon in footer-->
+        <script src="https://kit.fontawesome.com/8fff2b135c.js" crossorigin="anonymous"></script>
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!--Import Fascinate Inline and Open Sans fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <!--Create the slide out side navigation panel-->
+            <ul id="slide-out" class="sidenav">
+                <!--Name of site, centered with the Fascinate font and dark red text-->
+                <li><h5 class = "center-align fascinate red-text text-darken-4">HTHS PAC</h5></li>
+                <!--Link to home page-->
+                <li><a class="waves-effect open-sans" href="index.html">HOME</a></li>
+                <!--Link to about page-->
+                <li><a class="waves-effect open-sans" href="about.html">ABOUT</a></li>
+                <!--Link to gallery page-->
+                <li><a class="waves-effect open-sans" href="gallery.html">GALLERY</a></li>
+                <!--Link to upcoming shows page-->
+                <li><a class="waves-effect open-sans" href="upcoming-shows.html">UPCOMING SHOWS</a></li>
+                <!--Link to auditions page-->
+                <!--Since this is the auditions page, the "active" class is used, making the link appear to already be clicked-->
+                <li class="active"><a class="waves-effect open-sans" href="#!">AUDITIONS</a></li>
+            </ul>
+            <nav>
+                <!--Create top navigation banner/bar-->
+                <div class="nav-wrapper red darken-4">
+                    <!--Site title-->
+                    <a href="index.html" class="brand-logo center fascinate big">HTHS PAC</a>
+                    <!--Creates menu icon in top left corner, which can be clicked to access the side navigation panel-->
+                    <a href="#" data-target="slide-out" class = "sidenav-trigger show-on-large"><i class = "material-icons">dehaze</i></a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="parallax-container">
+                <div class="parallax"><img src="images/auditions.png"></div>
+            </div>
+            <!-- container to make content not go all the way to the edge of the window -->
+            <div class = "container">
+                <p class = "fascinate red-text text-darken-4 center-align big">Auditions</p>
+                <!-- div with id "no-auditions" for the purpose of easily toggling between upcoming auditions and no upcoming auditions (more info in style.css), this one shows a message saying there are no upcoming auditions -->
+                <div id="no-auditions">
+                    <h4 class = "open-sans">Sorry, <strong>there are no auditions at this time.</strong> Please check again later, or sign up for our mailing list if you want to be updated as soon as we post new audition information!</h4>
+                </div>
+                <!-- div with id "audition-info" for the purpose of easily toggling between upcoming auditions and no upcoming auditions (more info in style.css), this one shows page info about the upcoming auditions -->                
+                <div id="audition-info">
+                    <img src="images/ffLogo.jpg" width=100%>
+                    <h3 class = "fascinate center-align red-text text-darken-4"><strong>Freaky Friday</strong></h3>
+                    <h5 class = "open-sans">Auditions will be held on <strong>Wednesday 12/18</strong> and <strong>Thursday 12/19</strong> after school in <strong>Room 110</strong>. <!-- link to audition signup spreadsheet --><i><a href="https://docs.google.com/spreadsheets/d/13yWAlRNSZux7i0SaF5tcPHMBb62CmwweQ9xWEJqPL0U" target="_blank" class = "red-text text-darken-4"><b>Click here</b></a></i> to sign up! Make sure you <strong>INCLUDE LINKS</strong> for your karaoke audition tracks. If applicable, please also specify when you want us to start/stop your track in the notes section.</h5>
+                    <h5>If you <strong>absolutely cannot make it</strong> to an after school audition, we will be holding a limited number of auditions during lunch on <strong>Wednesday 12/18</strong>. <i>If you are able to make it to the after school ones, please sign up for those,</i> even if you have to leave early. Just let us know the day of if this is the case so that we can get you in earlier.</h5>
+                    <!-- link to audition info packet -->
+                    <h5><i><a href="pdfs/Freaky Friday Info Packet.pdf" target="_blank" class = "red-text text-darken-4"><strong>Click here</strong></a></i> for more information about the show, character descriptions, tips for auditioning, and other ways to help out with the production!</h5>
+                    <br>
+                    <h5><strong>Thanks for your interest in PAC! Hope to see you at auditions... break a leg! :)</strong></h5>
+                </div>
+            </div>
+        </main>
+        <!-- import jQuery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <!-- import Materialize -->
+        <script src = "materialize-v1.0.0\materialize\js\materialize.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                /*Initialize collapsible side navigation panel*/
+                $('.sidenav').sidenav();
+                /*Initialize parallax scrolling elements*/
+                $('.parallax').parallax();
+            });
+        </script>
+        <!-- following script code for scroll to top button is from https://html-online.com/articles/dynamic-scroll-back-top-page-button-javascript/ -->
+        <script>
+            /*Scroll to top when arrow up clicked BEGIN*/
+            $(window).scroll(function() {
+                var height = $(window).scrollTop();
+                if (height > 100) {
+                    $('#back2Top').fadeIn();
+                } else {
+                    $('#back2Top').fadeOut();
+                }
+            });
+            /*Scroll to top when arrow up clicked END*/
+            $(document).ready(function() {
+                $("#back2Top").click(function(event) {
+                    event.preventDefault();
+                    $("html, body").animate({ scrollTop: 0 }, "slow");
+                    return false;
+                });
+            });
+        </script>
+        <!-- creates footer at bottom of page -->
+        <footer class = "page-footer red darken-4 flex-container">
+            <!-- creates instagram icon in footer -->
+            <a href="https://www.instagram.com/hths.pac/?hl=en" target="_blank" class="fa fa-instagram"></a>
+            <!-- creates hths website icon in footer -->
+            <a href="https://www.hths.mcvsd.org" target="_blank" class="fab fa-react"></a>
+            <!-- creates email icon in footer -->
+            <a href="pdfs/PAC Officer Emails.pdf" target="_blank" class="far fa-envelope"></a>
+            <!-- creates scroll to top button, code from https://html-online.com/articles/dynamic-scroll-back-top-page-button-javascript/ -->
+            <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+        </footer>
+    </body>
+</html>
